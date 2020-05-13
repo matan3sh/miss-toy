@@ -1,13 +1,13 @@
 {
   "toys": [
     {
-      "name": "et donec",
-      "price": "35",
-      "type": "Educational",
-      "inStock": false,
-      "img": "https://images-na.ssl-images-amazon.com/images/I/71nlEoSrewL._AC_SY741_.jpg",
       "_id": 6543,
-      "createdAt": "1976-10-30T08:19:07.861Z"
+      "name": "et donec",
+      "price": 34,
+      "type": "Educational",
+      "img": "https://images-na.ssl-images-amazon.com/images/I/71nlEoSrewL._AC_SY741_.jpg",
+      "createdAt": "1976-10-30T08:19:07.861Z",
+      "inStock": false
     },
     {
       "_id": 6544,
