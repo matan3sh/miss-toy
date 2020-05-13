@@ -1,50 +1,28 @@
-.btn-primary,
-.bg-primary,
-.badge-primary,
-.alert-primary {
-  background: $primary-color !important;
-  color: #fff !important;
-}
-
-.btn-light,
-.bg-light,
-.badge-light,
-.alert-light {
-  background: $light-color !important;
-  color: #333 !important;
-}
-
-.btn-dark,
-.bg-dark,
-.badge-dark,
-.alert-dark {
-  background: $dark-color !important;
-  color: #fff !important;
-}
-
-.btn-danger,
-.bg-danger,
-.badge-danger,
-.alert-danger {
-  background: $danger-color !important;
-  color: #fff !important;
-}
-
-.btn-success,
-.bg-success,
-.badge-success,
-.alert-success {
-  background: $success-color !important;
-  color: #fff !important;
-}
-
-.btn-white,
-.bg-white,
-.badge-white,
-.alert-white {
-  background: #fff;
-  color: #333;
-  border: #ccc solid 1px;
+// Backgrounds
+.bg,
+.btn,
+.badge,
+.alert {
+  &-primary {
+    @include set-background($primary-color);
+  }
+  &-light {
+    @include set-background($light-color);
+    border: #ccc 1px solid;
+  }
+  &-dark {
+    @include set-background($dark-color);
+  }
+  &-success {
+    @include set-background($success-color);
+  }
+  &-danger {
+    @include set-background($danger-color);
+  }
+  &-white {
+    @include set-background(#fff);
+    border: #ccc 1px solid;
+  }
 }
 
 .pointer {

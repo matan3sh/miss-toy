@@ -34,7 +34,7 @@ export const DashboardList = ({ toys, onDelete }) => {
           </div>
           <div>
             <h5 style={{ fontSize: '18px' }}>
-              <span className='text-primary'>Name:</span> {toy.name}
+              <span className='badge badge-light'>Name:</span> {toy.name}
             </h5>
           </div>
           <div>
