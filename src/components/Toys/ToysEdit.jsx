@@ -29,7 +29,7 @@ class ToysEdit extends Component {
 
   onChange = (e) => {
     let { name, value } = e.target;
-    value = e.target.type === 'number' ? parseInt(value) : value;
+    value = e.target.name === 'price' ? parseInt(value) : value;
     this.setState({ [name]: value });
   };
 

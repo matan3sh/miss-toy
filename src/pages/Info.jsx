@@ -6,7 +6,7 @@ import { BarChart } from '../components/Chart/BarChart';
 import { PieChart } from '../components/Chart/PieChart';
 import { Spinner } from '../components/Layout/Spinner';
 
-export class Dashboard extends Component {
+export class Info extends Component {
   state = {
     years: null,
     eduTyps: null,

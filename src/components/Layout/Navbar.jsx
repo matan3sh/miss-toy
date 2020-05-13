@@ -17,7 +17,7 @@ const Navbar = ({ title, icon }) => {
           </NavLink>
         </li>
         <li>
-          <NavLink to='/dashboard' activeClassName='nav-active' exact>
+          <NavLink to='/info' activeClassName='nav-active' exact>
             Info
           </NavLink>
         </li>
