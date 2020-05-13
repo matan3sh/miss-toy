@@ -1,10 +1,6 @@
 import React from 'react';
-
-import { connect } from 'react-redux';
 import ChatBox from './ChatBox';
 import { ChatBtn } from './ChatBtn';
-
-import '../../style/Chat.css';
 
 class Chat extends React.Component {
   state = { isOpen: false };
@@ -23,14 +19,4 @@ class Chat extends React.Component {
   }
 }
 
-const mapStateToProps = (state) => {
-  return {
-    // toys: state.toysApp.toys,
-  };
-};
-
-const mapDispatchToProps = {
-  //   searchToy,
-};
-
-export default connect(mapStateToProps, mapDispatchToProps)(Chat);
+export default Chat;

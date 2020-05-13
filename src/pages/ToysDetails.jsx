@@ -23,14 +23,14 @@ class ToysDetails extends React.Component {
               <img src={toy.img} alt='Toy-Thumb' className='toy-img' />
               {toy.inStock ? (
                 <span
-                  className='badge bg-success'
+                  className='badge badge-success'
                   style={{ display: 'block', width: '100%', fontSize: '20px' }}
                 >
                   Item In Stock
                 </span>
               ) : (
                 <span
-                  className='badge bg-danger'
+                  className='badge badge-danger'
                   style={{ display: 'block', width: '100%', fontSize: '20px' }}
                 >
                   Out Of Stock

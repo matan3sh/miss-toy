@@ -1,5 +1,4 @@
 import React from 'react';
-import '../../style/ChatBtn.css';
 
 export const ChatBtn = ({ onToggle }) => {
   return (

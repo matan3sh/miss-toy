@@ -7,8 +7,6 @@ import { ToysList } from '../components/Toys/ToysList';
 import ToysSearch from '../components/Toys/ToysSearch';
 import ToysFilter from '../components/Toys/ToysFilter';
 
-import '../style/Toys.css';
-
 class ToysApp extends React.Component {
   componentDidMount() {
     setTimeout(() => this.props.loadToys(), 1000);

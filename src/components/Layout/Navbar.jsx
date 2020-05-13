@@ -2,8 +2,6 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
-import '../../style/Navbar.css';
-
 const Navbar = ({ title, icon }) => {
   return (
     <div className='navbar bg-primary'>
@@ -14,6 +12,11 @@ const Navbar = ({ title, icon }) => {
         <li>
           <NavLink to='/' activeClassName='nav-active' exact>
             Home
+          </NavLink>
+        </li>
+        <li>
+          <NavLink to='/dashboard' activeClassName='nav-active' exact>
+            Dashboard
           </NavLink>
         </li>
         <li>

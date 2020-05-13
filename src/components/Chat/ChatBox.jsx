@@ -1,9 +1,6 @@
 import React from 'react';
-
 import { connect } from 'react-redux';
-
 import { sendMessage } from '../../store/actions/ChatActions';
-import '../../style/Chat.css';
 
 class ChatBox extends React.Component {
   state = { msg: '' };

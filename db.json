@@ -10,13 +10,13 @@
       "inStock": false
     },
     {
-      "name": "sollicitudin mattis",
-      "price": 66,
-      "type": "Educational",
-      "inStock": true,
-      "img": "https://touchit.co.il/wp-content/uploads/2020/03/b_1.jpg",
       "_id": 6544,
-      "createdAt": "1996-08-07T07:23:51.619Z"
+      "name": "sollicitudin mattis",
+      "price": 6,
+      "type": "Educational",
+      "img": "https://touchit.co.il/wp-content/uploads/2020/03/b_1.jpg",
+      "createdAt": "1996-08-07T07:23:51.619Z",
+      "inStock": true
     },
     {
       "_id": 6545,
