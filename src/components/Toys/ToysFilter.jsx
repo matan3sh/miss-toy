@@ -25,6 +25,8 @@ class ToysFilter extends React.Component {
   };
 
   render() {
+    const types = this.props.toys.map((toy) => toy.type);
+    const uniqueTypes = [...new Set(types)];
     return (
       <div className='flex-center'>
         <div className='grid-3'>
@@ -40,9 +42,11 @@ class ToysFilter extends React.Component {
             <label>Type</label>
             <select onChange={(e) => this.onType(e.target.value)}>
               <option value='All'>All</option>
-              <option value='Funny'>Funny</option>
-              <option value='Adult'>Adult</option>
-              <option value='Educational'>Educational</option>
+              {uniqueTypes.map((type, index) => (
+                <option key={index} value={type}>
+                  {type}
+                </option>
+              ))}
             </select>
           </div>
           <div>

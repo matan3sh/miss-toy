@@ -16,7 +16,7 @@ const Navbar = ({ title, icon }) => {
         </li>
         <li>
           <NavLink to='/dashboard' activeClassName='nav-active' exact>
-            Dashboard
+            Admin
           </NavLink>
         </li>
         <li>

@@ -9,6 +9,7 @@
     "@testing-library/user-event": "^7.2.1",
     "axios": "^0.19.2",
     "chart.js": "^2.9.3",
+    "formik": "^2.1.4",
     "google-maps-react": "^2.0.6",
     "moment": "^2.25.3",
     "node-sass": "^4.14.1",
@@ -19,10 +20,12 @@
     "react-redux": "^7.2.0",
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.4.1",
+    "react-toastify": "^6.0.4",
     "react-transition-group": "^4.4.1",
     "redux": "^4.0.5",
     "redux-devtools-extension": "^2.13.8",
-    "redux-thunk": "^2.3.0"
+    "redux-thunk": "^2.3.0",
+    "yup": "^0.28.5"
   },
   "scripts": {
     "start": "react-scripts start",

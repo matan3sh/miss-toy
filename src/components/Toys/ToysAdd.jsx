@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-
 import { saveToy } from '../../store/actions/ToysActions';
+import cloudinaryService from '../../services/cloudinaryService';
 
+import { toast } from 'react-toastify';
 import TextField from '@material-ui/core/TextField';
 import FormControl from '@material-ui/core/FormControl';
 import InputLabel from '@material-ui/core/InputLabel';
@@ -21,14 +22,26 @@ class ToysAdd extends Component {
 
   onChange = (e) => {
     let { name, value } = e.target;
-    value = e.target.name === 'price' ? parseInt(value) : value;
+    value = name === 'price' ? parseInt(value) : value;
     this.setState({ [name]: value });
   };
 
   onSubmit = (e) => {
     e.preventDefault();
+    const { name, img, price } = this.state;
+    if (name === '' || price === '' || img === '') {
+      toast.error('Please Fill In All Fields');
+      return;
+    }
     this.props.saveToy(this.state);
     this.props.history.push('/');
+    toast.success('Toy Added Successfully');
+  };
+
+  uploadImage = ({ target }) => {
+    cloudinaryService
+      .upload(target.files)
+      .then((img) => this.setState({ img: img }));
   };
 
   render() {
@@ -49,14 +62,11 @@ class ToysAdd extends Component {
                   alt='Toy-Thumb'
                   className='toy-img-edit'
                 />
-                <TextField
-                  id='filled-name'
-                  label='Image Url'
+                <input
+                  type='file'
+                  placeholder='Upload Image'
+                  onChange={this.uploadImage}
                   name='img'
-                  value={this.state.img}
-                  onChange={this.onChange}
-                  variant='filled'
-                  style={{ padding: '15px 0' }}
                 />
               </div>
               <div className='my-3'>

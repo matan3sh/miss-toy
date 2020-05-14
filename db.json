@@ -10,31 +10,22 @@
       "inStock": false
     },
     {
-      "_id": 6544,
       "name": "NBA 2K20",
       "price": 6,
       "type": "Educational",
+      "inStock": true,
       "img": "https://touchit.co.il/wp-content/uploads/2020/03/b_1.jpg",
-      "createdAt": "1996-08-07T07:23:51.619Z",
-      "inStock": true
+      "_id": 6544,
+      "createdAt": "1996-08-07T07:23:51.619Z"
     },
     {
-      "_id": 6545,
-      "name": "God of War",
-      "price": 44,
-      "type": "Funny",
-      "img": "https://images-na.ssl-images-amazon.com/images/I/81aJ4-EcqRL._AC_SX522_.jpg",
-      "createdAt": "1995-10-09T01:11:47.988Z",
-      "inStock": true
-    },
-    {
-      "_id": 6546,
       "name": "Just Dance 2020",
       "price": 27,
       "type": "Adult",
+      "inStock": false,
       "img": "https://konimboimages.s3.amazonaws.com/system/photos/3892279/original/a4dcf08dafc61b2e234f97b9c674ad13.jpg",
-      "createdAt": "1989-05-01T21:50:41.730Z",
-      "inStock": false
+      "_id": 6546,
+      "createdAt": "1989-05-01T21:50:41.730Z"
     },
     {
       "_id": 6547,
@@ -64,13 +55,13 @@
       "inStock": true
     },
     {
-      "_id": 6550,
       "name": "NBA 2K17",
-      "price": 54,
+      "price": 55,
       "type": "Funny",
+      "inStock": false,
       "img": "https://images-na.ssl-images-amazon.com/images/I/91InYCSRcDL.jpg",
-      "createdAt": "1980-06-16T22:02:22.319Z",
-      "inStock": false
+      "_id": 6550,
+      "createdAt": "1980-06-16T22:02:22.319Z"
     },
     {
       "_id": 6551,
@@ -163,13 +154,22 @@
       "inStock": true
     },
     {
-      "name": "NBA Live 20",
-      "price": 99,
+      "name": "WWE 2K20",
+      "price": 55,
       "type": "Adult",
       "inStock": true,
-      "img": "https://preview.redd.it/wooh8vtr57y21.jpg?width=627&format=pjpg&auto=webp&s=7695de2812b4616c32d0d3cb7f7dedb6a71ab868",
-      "createdAt": 1589435825893,
-      "_id": 6561
+      "img": "https://res.cloudinary.com/dwymjj6rm/image/upload/v1589460804/miss-toy/sr2pw97welmt3v8olvqo.jpg",
+      "createdAt": 1589460782640,
+      "_id": 6562
+    },
+    {
+      "name": "NBA 2K20 Legend",
+      "price": 200,
+      "type": "Funny",
+      "inStock": true,
+      "img": "https://res.cloudinary.com/dwymjj6rm/image/upload/v1589468479/miss-toy/jiuubkagqz1ntnbavm72.jpg",
+      "createdAt": 1589468432323,
+      "_id": 6563
     }
   ]
 }

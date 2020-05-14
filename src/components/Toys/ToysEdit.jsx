@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 
 import { loadToy, saveToy } from '../../store/actions/ToysActions';
 import { Spinner } from '../../components/Layout/Spinner';
+import { toast } from 'react-toastify';
 
 import TextField from '@material-ui/core/TextField';
 import FormControl from '@material-ui/core/FormControl';
@@ -35,8 +36,14 @@ class ToysEdit extends Component {
 
   onSubmit = (e) => {
     e.preventDefault();
+    const { name, img, price } = this.state;
+    if (name === '' || price === '' || img === '') {
+      toast.error('Please Fill In All Fields');
+      return;
+    }
     this.props.saveToy(this.state);
     this.props.history.push('/');
+    toast.success('Toy Updated Successfully');
   };
 
   render() {

@@ -1,19 +1,21 @@
 import React from 'react';
 import store from './store/store';
+import { ToastContainer } from 'react-toastify';
 
-import Navbar from './components/Layout/Navbar.jsx';
-import { About } from './pages/About.jsx';
+import Navbar from './components/Layout/Navbar';
+import { About } from './pages/About';
 import Chat from './components/Chat/Chat';
 import { Info } from './pages/Info';
-import Dashboard from './pages/Dashboard.jsx';
+import Dashboard from './pages/Dashboard';
 import ToysApp from './pages/ToysApp.jsx';
-import ToysDetails from './pages/ToysDetails.jsx';
+import ToysDetails from './pages/ToysDetails';
 import ToysEdit from './components/Toys/ToysEdit';
 import ToysAdd from './components/Toys/ToysAdd';
 
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { Provider } from 'react-redux';
 
+import 'react-toastify/dist/ReactToastify.css';
 import './style/global.scss';
 
 const App = () => {
@@ -22,6 +24,7 @@ const App = () => {
       <Router>
         <Navbar />
         <div className='container'>
+          <ToastContainer />
           <Switch>
             <Route exact path='/' component={ToysApp} />
             <Route exact path='/add' component={ToysAdd} />

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import { toast } from 'react-toastify';
 import { loadToys, removeToy } from '../store/actions/ToysActions';
 import { Spinner } from '../components/Layout/Spinner';
 import ToysSearch from '../components/Toys/ToysSearch';
@@ -12,6 +13,7 @@ class Dashboard extends Component {
 
   onDelete = (toyId) => {
     this.props.removeToy(toyId);
+    toast.info('Toy Deleted Successfully');
   };
 
   render() {
@@ -22,7 +24,9 @@ class Dashboard extends Component {
           <Spinner />
         ) : (
           <div className='grid-1'>
-            <ToysSearch />
+            <div className='filter-search'>
+              <ToysSearch />
+            </div>
             {filtered !== null ? (
               <DashboardList toys={filtered} onDelete={this.onDelete} />
             ) : (
