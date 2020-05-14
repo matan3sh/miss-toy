@@ -15,10 +15,10 @@ body {
 a {
   color: $primary-color;
   text-decoration: none;
-}
 
-a:hover {
-  color: #666;
+  &:hover {
+    color: #666;
+  }
 }
 
 ul {
