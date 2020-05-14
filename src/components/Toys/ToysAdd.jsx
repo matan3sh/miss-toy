@@ -16,6 +16,7 @@ class ToysAdd extends Component {
     type: '',
     inStock: '',
     img: '',
+    createdAt: Date.now(),
   };
 
   onChange = (e) => {
