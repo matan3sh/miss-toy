@@ -9,6 +9,7 @@ import Dashboard from './pages/Dashboard.jsx';
 import ToysApp from './pages/ToysApp.jsx';
 import ToysDetails from './pages/ToysDetails.jsx';
 import ToysEdit from './components/Toys/ToysEdit';
+import ToysAdd from './components/Toys/ToysAdd';
 
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { Provider } from 'react-redux';
@@ -23,6 +24,7 @@ const App = () => {
         <div className='container'>
           <Switch>
             <Route exact path='/' component={ToysApp} />
+            <Route exact path='/add' component={ToysAdd} />
             <Route exact path='/about' component={About} />
             <Route exact path='/dashboard' component={Dashboard} />
             <Route exact path='/info' component={Info} />
