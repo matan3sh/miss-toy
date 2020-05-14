@@ -27,7 +27,7 @@ class ChatBox extends React.Component {
               style={{ float: 'right', marginTop: '5px' }}
               onClick={() => this.props.onToggle()}
             >
-              <i className='fas fa-arrow-down fa-2x text-light pointer' />
+              <i className='fas fa-arrow-down fa-2x text-white pointer' />
             </span>
           </div>
           <div className='chat-body'>
